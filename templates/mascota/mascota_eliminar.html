@@ -1,0 +1,11 @@
+{% extends 'base/base.html' %}
+{% block content %}
+
+<h1>my formulario de mascotas</h1>
+<form  method="POST" >
+	{% csrf_token %}
+	<h3>¿desea eliminar el registro de {{mascota.nombre}}?</h3>
+	<button type="submit">si, eliminar</button>
+</form>
+	<a class="btn btn-default" href="{% url 'mascota:mascota_listar '%}">CANCELAR</a>
+{% endblock %}

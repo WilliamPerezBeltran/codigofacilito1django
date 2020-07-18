@@ -1,0 +1,15 @@
+{% extends "base/base.html" %}
+
+{%block header%}
+<h4>este el bloque del header index mascota </h4>
+<!-- {%include 'base/header.html'%} -->
+{% endblock %}
+
+{% block content %}
+<h1>este es el index de mascotas</h1>
+
+
+<h5>es es el contenido del archio base</h5>
+<a class="btn btn-primary" href="{% url 'mascota:mascota_listar'%}">ir a listar </a>
+	
+{% endblock %}
